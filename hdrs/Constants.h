@@ -5,7 +5,7 @@
 
 namespace Constants
 {
-    constexpr std::size_t FaceLandmarksNum = 72;
+    constexpr std::size_t FaceLandmarksNum = 68;
 
     namespace JawLineLandmarks
     {
@@ -54,7 +54,7 @@ namespace Constants
         constexpr std::uint16_t OuterNumber = OuterEnd - OuterBegin;
 
         constexpr std::uint16_t InnerBegin = 60;
-        constexpr std::uint16_t InnerEnd = 72;
+        constexpr std::uint16_t InnerEnd = 67;
         constexpr std::uint16_t InnerNumber = InnerEnd - InnerBegin;
     }
 }

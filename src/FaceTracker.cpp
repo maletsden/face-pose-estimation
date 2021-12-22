@@ -21,7 +21,7 @@ FaceTracker<FaceTrackerTypes::Custom>::FaceTracker(const CameraCalibration& came
 {
 }
 
-void FaceTracker<FaceTrackerTypes::Custom>::SetFaceDatector(std::unique_ptr<IFaceDetector>&& faceDetector) noexcept
+void FaceTracker<FaceTrackerTypes::Custom>::SetFaceDetector(std::unique_ptr<IFaceDetector>&& faceDetector) noexcept
 {
     m_faceDetector = std::move_if_noexcept(faceDetector);
 }

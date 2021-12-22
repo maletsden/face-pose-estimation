@@ -21,7 +21,7 @@ class FaceTracker<FaceTrackerTypes::Custom> : public FaceTrackerBase
 {
 public:
     explicit FaceTracker(const CameraCalibration& cameraCalibration);
-    void SetFaceDatector(std::unique_ptr<IFaceDetector>&& faceDetector) noexcept;
+    void SetFaceDetector(std::unique_ptr<IFaceDetector>&& faceDetector) noexcept;
     void SetFaceLandmarksDetector(std::unique_ptr<IFaceLandmarksDetector>&& faceLandmarkDetector) noexcept;
     void SetJawsPosesDetector(std::unique_ptr<IJawPoseDetector>&& jawsPosesDetector) noexcept;
     void SetFaceSelector(std::unique_ptr<IFaceSelector>&& faceSelector) noexcept;
