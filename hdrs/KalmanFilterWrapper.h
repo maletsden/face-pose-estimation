@@ -12,8 +12,6 @@
 class KalmanFilterWrapper : public IFilter
 {
 public:
-    using DataType = double;
-
     KalmanFilterWrapper() = default;
 
     KalmanFilterWrapper(
@@ -24,8 +22,6 @@ public:
 
     cv::Mat Filter(const cv::Mat& measurment, std::chrono::high_resolution_clock::time_point timestamp) override;
     cv::Mat GetCorrectedState() const noexcept;
-
-    static constexpr auto DataOpenCvType = CV_64FC1;
 
 private:
     cv::Mat ComputeTransitionMatrix(const DataType dt) const noexcept;

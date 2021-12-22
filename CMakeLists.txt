@@ -27,7 +27,8 @@ set(
         src/PnPPoseDetector.cpp
         src/PoseTransformation.cpp
         src/Storage.cpp
-)
+        src/CircularBufferedDeque.cpp
+        src/LinearFilter.cpp)
 
 add_executable( ${PROJECT_NAME} main.cpp ${SOURCES})
 
